@@ -4,7 +4,7 @@ Disciplina: Técnicas de Apredizagem de Máquinas (AM) aplicadas à análise esp
 Professor: Dr. Max Anjos (https://github.com/ByMaxAnjos)
 
 Aula: Aplicando o primeiro modelo de AM
-Objetivo deste exércicio: predizer o fluxo de carros usando vários algorítimos de AM
+Objetivo desta atividade: predizer o fluxo de carros usando vários algorítimos de AM
 Data: 11.09.2023
 
 Fonte dos dados: Digital Platform City Traffic Berlin/Traffic Detection Berlin, 2021; Open Street Map, 2023. 
@@ -33,7 +33,7 @@ str(dados)
 head(dados)
 dados
 
-## Carregue o mapa das estações de contagem de carros usando a função st_read() do pacote sf e o plote com a qtm() do pacote tmap. Ative o modo "plot" ou "view" da função tmap_mode()
+## Carregue o mapa das estações de contagem de carros usando a função st_read() do pacote sf e plote com a qtm() do pacote tmap. Ative o modo "plot" ou "view" da função tmap_mode()
 
 estacoes <- st_read("caminho/para/seu/arquivo/dados.shp") #formato dataframe em .shp
 
@@ -42,7 +42,7 @@ qtm(estacoes)
 
 # Explorar os dados -------------------------------------------------------
 
-##Analisar a relação entre a variável dependente e as explicativas através da correlação linear simples
+##Analisar a relação entre a variável dependente e as variáveis explicativas através da correlação linear simples
 ggplot(dados, aes(x=compriment_via, y = fluxo_carros)) +
   geom_point()
 
@@ -59,14 +59,14 @@ ggplot(dados, aes(x = compriment_via, y = fluxo_carros)) +
 # Dividindo os dados em conjuntos de treinamento e teste ------------------
 
 ## Use a função initial_split do pacote tydimodels
-indices_treino <- initial_split(dados, prop = 0.80) # Indica a proporção 80% train e 20% teste
+indices_treino <- initial_split(dados, prop = 0.80) # Indique a proporção 80% train e 20% teste
 conjunto_treino <- training(indices_treino)
 conjunto_teste  <-  testing(indices_treino)
 
 
-# Applicando o algorítimo dde regressão linear simples  ------------------------
+# Applicando o algorítimo de regressão linear simples  ------------------------
 
-##Treinando (Ajustando) um modelo de regressão linear chamado lm
+##Treinando (ajustando) um modelo de regressão linear com a função  lm()
 modelo_lm_treinado <- lm(fluxo_carros ~ compriment_via, data = conjunto_treino)
 
 ## Visualizando os coeficientes do modelo
@@ -83,7 +83,7 @@ predicoes <- predict(modelo_lm_treinado, newdata = conjunto_teste)
 tabela <- data.frame(real = conjunto_teste$fluxo_carros,
                         modelado = predicoes)
 
-## Opção 2: transformar as predicões em data.frame e unir com o conjunto teste usando a função bind_cols do pacote dplyr
+## Opção 2: transformar as predicões em data.frame e unir com o conjunto teste, usando a função bind_cols () do pacote dplyr
 pred_df_lm <- data.frame(pred_lm = predicoes)
 resultado1 <- bind_cols(conjunto_teste, pred_df_lm)
 
@@ -102,7 +102,7 @@ ggplot(resultado1) +
 ##Calculate o erro do model
 
 
-# Aplicando o algorítimo de regressão linear múltipla ---------------------
+# Aplicando o algorítimo de Regressão Linear Múltipla ---------------------
 
 ##Treine o modelo usando o dataframe "conjunto_treino"
 str(conjunto_treino)
@@ -111,10 +111,10 @@ model_lmulti_treinado <- lm(fluxo_carros ~ compriment_via+largura_via+velocid_li
                             data = conjunto_treino)
 model_lmulti_treinado
 
-##Faça a previsão usando o dataframe "conjunto_teste"
+##Faça a previsão com o modelo treinado "model_lmulti_treinado" usando o dataframe "conjunto_teste"
 predicoes_lmulti <- predict(model_lmulti_treinado, newdata =conjunto_teste)
 
-## Convert to data.frame e unir com o conjunto teste 
+## Converter para data.frame e unir com o conjunto teste 
 pred_df_lmulti <- data.frame(pred_lmulti = predicoes_lmulti)
 
 resultado2 <- bind_cols(conjunto_teste, pred_df_lmulti)
@@ -129,7 +129,7 @@ ggplot(resultado2) +
 
 ##Calcule o erro do modelo
 
-# Aplicando o algorítimo florestas aleatórias (random forest) -------------
+# Aplicando o algorítimo Florestas Aleatórias (Random Forest) -------------
 
 ##Treine o modelo usando o dataframe "conjunto_treino"
 str(conjunto_treino)
@@ -138,11 +138,11 @@ model_florest_treinado <- ranger(fluxo_carros ~ compriment_via+largura_via+veloc
                             data = conjunto_treino)
 
 model_florest_treinado
-##Faça a previsão usando o dataframe "conjunto_teste"
+##Faça a previsão com o "model_florest_treinado" usando o dataframe "conjunto_teste"
 
 predicoes_florest <- predict(model_florest_treinado, data=conjunto_teste)
 
-## Convert to data.frame e unir com o conjunto teste 
+## Converter para data.frame e unir com o conjunto teste 
 pred_df_florest <- data.frame(pred_florest = predicoes_florest$predictions)
 
 resultado3 <- bind_cols(conjunto_teste, pred_df_florest)
@@ -160,7 +160,7 @@ ggplot(resultado3) +
 
 # Selecione o melhor algorítimo em relação aos dados ----------------------
 
-##Cre um dataframe e junte os dataframes com os modelos testados
+##Crie um dataframe e junte os dataframes com os modelos testados
 final_df <- data.frame(FID = resultado1$FID,
                        dado_real = resultado1$fluxo_carros,
                        lm = resultado1$pred_lm,
