@@ -1,9 +1,13 @@
 ' 
 Universidade Federal do Rio Grande do Norte
-Disciplina: Técnicas de AM aplicadas à análise espacial
-Professor: Dr. Max Anjos
+Disciplina: Técnicas de Apredizagem de Máquinas (AM) aplicadas à análise espacial
+Professor: Dr. Max Anjos (https://github.com/ByMaxAnjos)
+
 Aula: Aplicando o primeiro modelo de AM
+Objetivo deste exércicio: predizer o fluxo de carros usando vários algorítimos de AM
 Data: 11.09.2023
+
+Fonte dos dados: Digital Platform City Traffic Berlin/Traffic Detection Berlin, 2021; Open Street Map, 2023. 
 '
 
 # Instalar os pacotes e carregar as bibliotecas necessárias ---------------
