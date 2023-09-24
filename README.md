@@ -12,7 +12,7 @@ Researcher, Chair of Climatology, Institute of Ecology, Technische Universität 
 
 Welcome to the world of Machine Learning for Geospatial Analysis! In this course, we will explore the fundamental concepts, tools, and techniques of Machine Learning as applied to spatial analysis. **Whether you're a novice or have some prior experience, this course will provide you with valuable insights into data manipulation, spatial data exploration, and the creation of predictive models**. We will also dive into cluster analysis and dimensionality reduction techniques, all while utilizing the R programming language and Geographic Information Systems (GIS).
 
-## Course Highlits
+## Course Highlights
 
 **Hands-On Learning**: This course takes a practical, hands-on approach to ensure you gain an intuitive understanding of Machine Learning through real-world examples and case studies.
 
