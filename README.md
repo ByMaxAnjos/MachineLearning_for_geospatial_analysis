@@ -4,6 +4,7 @@ Tools and techniques of machine learning applied to geospatial analysis.
 ## Instructor
  
 **Dr. Max Anjos**
+
 Visiting Professor, Federal University of Rio Grande do Norte, Brazil.
 Researcher, Chair of Climatology, Institute of Ecology, Technische Universität Berlin.
 
@@ -16,7 +17,7 @@ Welcome to the world of Machine Learning for Geospatial Analysis! In this course
 
 **Hands-On Learning**: This course takes a practical, hands-on approach to ensure you gain an intuitive understanding of Machine Learning through real-world examples and case studies.
 
-**Comprehensive Curriculum**: We've carefully structured the course into four main parts to cover a wide range of topics. From the fundamentals of Machine Learning to mastering the R language, you'll be equipped with the skills needed to build your own Machine Learning models.
+**Comprehensive Curriculum**: We've carefully structured the course into four main parts to cover a wide range of topics. From the fundamentals of Machine Learning such as, supervised and non-supervised approach, to mastering the R language, you'll be equipped with the skills needed to analyze your dataset or build your own Machine Learning models.
 
 **Project-Based**: As part of your learning journey, you'll have the opportunity to work on individual Machine Learning projects. This practical experience will allow you to apply what you've learned in a real-world context.
 
