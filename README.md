@@ -1,10 +1,40 @@
-# MachineLearning_for_geospatial_analysis
+# Machine Learning for Geospatial Analysis
 Tools and techniques of machine learning applied to geospatial analysis.
 
-##Introduction
+## Instructor
+ 
+**Dr. Max Anjos**
+Visiting Professor, Federal University of Rio Grande do Norte, Brazil.
+Researcher, Chair of Climatology, Institute of Ecology, Technische Universität Berlin.
 
-This course aims to introduce the fundamental concepts, tools, and techniques of Machine Learning as applied to spatial analysis. It delves into data manipulation, exploration (especially spatial data), and the creation of predictive models. The approach is hands-on, fostering an intuitive understanding of Machine Learning through real-world examples and case studies, all while utilizing the R programming language and Geographic Information Systems (GIS).
 
-The course is structured into four main parts: The first part explores the core concepts and fundamentals of Machine Learning. The second part is dedicated to learning the R language. In the third part, participants are encouraged to build their own Machine Learning models based on case studies. The final part of the course involves participants presenting their individual Machine Learning projects.
+## Introduction
 
-Prerequisites for this course include a basic understanding of data analysis, for example using Excel, and familiarity with GIS. Basic knowledge of statistics is also beneficial.
+Welcome to the world of Machine Learning for Geospatial Analysis! In this course, we will explore the fundamental concepts, tools, and techniques of Machine Learning as applied to spatial analysis. **Whether you're a novice or have some prior experience, this course will provide you with valuable insights into data manipulation, spatial data exploration, and the creation of predictive models**. We will also dive into cluster analysis and dimensionality reduction techniques, all while utilizing the R programming language and Geographic Information Systems (GIS).
+
+## Course Highlits
+
+**Hands-On Learning**: This course takes a practical, hands-on approach to ensure you gain an intuitive understanding of Machine Learning through real-world examples and case studies.
+
+**Comprehensive Curriculum**: We've carefully structured the course into four main parts to cover a wide range of topics. From the fundamentals of Machine Learning to mastering the R language, you'll be equipped with the skills needed to build your own Machine Learning models.
+
+**Project-Based**: As part of your learning journey, you'll have the opportunity to work on individual Machine Learning projects. This practical experience will allow you to apply what you've learned in a real-world context.
+
+
+## Prerequisites
+
+To make the most of this course, we recommend having:
+
+**Basic Data Analysis Skills**: Familiarity with tools like Excel will be helpful as we delve into more advanced concepts.
+
+**GIS Knowledge**: A basic understanding of Geographic Information Systems (GIS) will give you an edge in grasping geospatial concepts.
+
+**Statistical Foundation**: While not mandatory, a basic knowledge of statistics will be beneficial as we explore various Machine Learning techniques.
+
+
+## Target Audience
+
+This course is designed for both undergraduate and postgraduate students who are eager to explore the intersection of Machine Learning and geospatial analysis. Whether you're pursuing a career in data science, geography, environmental science, or related fields, this course will empower you with valuable skills and knowledge to excel in your endeavors.
+
+
+
