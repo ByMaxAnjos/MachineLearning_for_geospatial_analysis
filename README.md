@@ -40,7 +40,7 @@ This course is designed for both undergraduate and postgraduate students who are
 
 ## First experience: Departament of Geography, Federal University of Rio Grande do Norte - UFRN, Brazil.
 
-Participantes applying technique for dimensionality reduction in unsupervised learning with Principal Component Analysis (PCA)
+Participants are applying the technique of Principal Component Analysis (PCA) for dimensionality reduction in unsupervised learning.
 
 <img width="992" alt="Screenshot 2023-10-02 at 08 55 37" src="https://github.com/ByMaxAnjos/MachineLearning_for_geospatial_analysis/assets/94705218/ec404658-23d4-4ccf-b71d-5bf2130f26ea">
 
