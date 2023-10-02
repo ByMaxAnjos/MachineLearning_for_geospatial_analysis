@@ -38,4 +38,12 @@ To make the most of this course, we recommend having:
 This course is designed for both undergraduate and postgraduate students who are eager to explore the intersection of Machine Learning and geospatial analysis. Whether you're pursuing a career in data science, geography, environmental science, or related fields, this course will empower you with valuable skills and knowledge to excel in your endeavors.
 
 
+## First experience: Departament of Geography, Federal University of Rio Grande do Norte - UFRN, Brazil.
+
+Participantes applying technique for dimensionality reduction in unsupervised learning with Principal Component Analysis (PCA)
+
+<img width="992" alt="Screenshot 2023-10-02 at 08 55 37" src="https://github.com/ByMaxAnjos/MachineLearning_for_geospatial_analysis/assets/94705218/ec404658-23d4-4ccf-b71d-5bf2130f26ea">
+
+
+
 
