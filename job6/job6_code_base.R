@@ -28,7 +28,7 @@ ndvi_map <- rast("/Users/co2map/Documents/CO2CityMap/CO2CityMap/MLforGEO/MLforGE
 
 plot(ndvi_map)
 
-qtm(ndvi_map, estilo = "cobalto")
+qtm(ndvi_map)
 
 # Operações geoespaciais ---------------------------------------------------
 
@@ -37,13 +37,13 @@ res(ndvi_map)
 
 #~~ Agregar raster para resolução mais grossa
 SMcoarse <- terra::aggregate(ndvi_map,           # Raster de umidade do solo
-                             fator = 10,    # Agregar por um fator de 10
+                             fact = 10,    # Agregar por um fator de 10
                              fun = mean)   # Função usada para agregar valores
 res(SMcoarse)
 
 #~~ Desagregar raster para resolução mais fina
 SMfine <- terra::disagg(ndvi_map, 
-                        fator = 3)
+                        fact = 3)
 res(SMfine)
 
 plot(SMfine)
