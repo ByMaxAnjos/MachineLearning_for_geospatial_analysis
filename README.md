@@ -6,6 +6,7 @@ Tools and techniques of machine learning applied to geospatial analysis.
 **Dr. Max Anjos**
 
 Visiting Professor, Federal University of Rio Grande do Norte, Brazil.
+
 Researcher, Chair of Climatology, Institute of Ecology, Technische Universität Berlin.
 
 
@@ -38,7 +39,7 @@ To make the most of this course, we recommend having:
 This course is designed for both undergraduate and postgraduate students who are eager to explore the intersection of Machine Learning and geospatial analysis. Whether you're pursuing a career in data science, geography, environmental science, or related fields, this course will empower you with valuable skills and knowledge to excel in your endeavors.
 
 
-## First experience: Departament of Geography, Federal University of Rio Grande do Norte - UFRN, Brazil.
+### First experience: Departament of Geography, Federal University of Rio Grande do Norte - UFRN, Brazil.
 
 Participants are applying the technique of Principal Component Analysis (PCA) for dimensionality reduction in unsupervised learning.
 
