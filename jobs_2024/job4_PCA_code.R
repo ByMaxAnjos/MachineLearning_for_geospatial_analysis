@@ -1,3 +1,17 @@
+' 
+Universidade Federal do Rio Grande do Norte
+Disciplina: Apredizagem de Máquinas (AM) para Geógrafos
+Professor: Dr. Max Anjos (https://github.com/ByMaxAnjos)
+
+Aula: Aplicando PCA
+Objetivo desta atividade: resolver um probelma de não supervisionado de redunção de dimensionalidade (PCA) a partir 
+do banco de dados socio e populacionais do IBGE e IPEA.
+
+Data: 27.11.2024
+
+Baixar os dados: no R.
+Fonte dos dados: https://ipeagit.github.io/aopdata/
+'
 
 # 1. Preparação: Carregar Bibliotecas e Dados -----------------------------
 # Bibliotecas Necessárias
